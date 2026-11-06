@@ -1,6 +1,0 @@
-node_modules/
-# Per-run evidence folders are large (html report, traces); the summary logs and the sample
-# evidence pack in evidence/sample-run/ are committed.
-evidence/run-*/
-evidence/stability-*/
-evidence/parallel-*/

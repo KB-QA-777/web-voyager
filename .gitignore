@@ -1,9 +1,13 @@
-# editors
+# editors / env
 .vscode/
-
-# environments
 .env
 .env.*
 
 # node
 node_modules/
+
+# Per-run evidence folders are large (html report, traces). The summary logs
+# (stability-run-log.md, parallel-run-log.md) and evidence/sample-run/ are committed.
+evidence/run-*/
+evidence/stability-20*/
+evidence/parallel-20*/

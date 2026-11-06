@@ -2,11 +2,11 @@
   "config": {
     "argv": [
       "/opt/node22/bin/node",
-      "/home/user/web-voyager/playwright-challenge/node_modules/@playwright/test/cli.js",
+      "/home/user/web-voyager/node_modules/.bin/playwright",
       "test"
     ],
-    "configFile": "/home/user/web-voyager/playwright-challenge/playwright.config.js",
-    "rootDir": "/home/user/web-voyager/playwright-challenge/tests",
+    "configFile": "/home/user/web-voyager/playwright.config.js",
+    "rootDir": "/home/user/web-voyager/tests",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": false,
@@ -22,7 +22,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results",
+        "outputDir": "/home/user/web-voyager/evidence/sample/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -30,7 +30,7 @@
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/home/user/web-voyager/playwright-challenge/tests",
+        "testDir": "/home/user/web-voyager/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -47,13 +47,13 @@
       [
         "json",
         {
-          "outputFile": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/results.json"
+          "outputFile": "/home/user/web-voyager/evidence/sample/results.json"
         }
       ],
       [
         "html",
         {
-          "outputFolder": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/html-report",
+          "outputFolder": "/home/user/web-voyager/evidence/sample/html-report",
           "open": "never"
         }
       ]
@@ -70,9 +70,9 @@
     "workers": 1,
     "webServer": {
       "command": "node app/server.js",
-      "url": "http://127.0.0.1:42461/health",
+      "url": "http://127.0.0.1:40993/health",
       "env": {
-        "APP_PORT": "42461"
+        "APP_PORT": "40993"
       },
       "reuseExistingServer": false,
       "stdout": "pipe",
@@ -110,23 +110,23 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3431,
+                      "duration": 1164,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-06T10:39:37.680Z",
+                      "startTime": "2026-11-06T10:53:24.773Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "session-A",
                           "contentType": "image/png",
-                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-2c00a-s-both-show-the-same-record-chromium/attachments/session-A-d895276af6257428915c77e0ece7e8edef22069f.png"
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-2c00a-s-both-show-the-same-record-chromium/attachments/session-A-3f7cdfb757c7b42df9b1acdbe8c7118801b89cda.png"
                         },
                         {
                           "name": "session-B",
                           "contentType": "image/png",
-                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-2c00a-s-both-show-the-same-record-chromium/attachments/session-B-733ad7c13cce0c7e7ae8ffb95f15ff0a8133fbb4.png"
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-2c00a-s-both-show-the-same-record-chromium/attachments/session-B-1b8fbfc3c5ce2027a471370ffeb0306a0ed30054.png"
                         }
                       ]
                     }
@@ -155,23 +155,23 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2521,
+                      "duration": 1134,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-06T10:39:41.741Z",
+                      "startTime": "2026-11-06T10:53:26.127Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "session-A",
                           "contentType": "image/png",
-                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-72657-view-live-and-after-refresh-chromium/attachments/session-A-f37c73f0cc5694ef6138b00bb6c622d83678e5ea.png"
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-72657-view-live-and-after-refresh-chromium/attachments/session-A-afe56f99ade6d3f7c2b5560356f635086e29f991.png"
                         },
                         {
                           "name": "session-B",
                           "contentType": "image/png",
-                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-72657-view-live-and-after-refresh-chromium/attachments/session-B-f6d39f1fe47e675c2a33f993102b10a26280ebd2.png"
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-72657-view-live-and-after-refresh-chromium/attachments/session-B-bc53642bba1735a5b665fe4b7f14bac981274134.png"
                         }
                       ]
                     }
@@ -200,23 +200,23 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2912,
+                      "duration": 1244,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-06T10:39:44.270Z",
+                      "startTime": "2026-11-06T10:53:27.273Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "session-A",
                           "contentType": "image/png",
-                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-ad7c5--and-the-winner-is-recorded-chromium/attachments/session-A-1aa45f8229821860c4b5110e7113fb60ae023df6.png"
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-ad7c5--and-the-winner-is-recorded-chromium/attachments/session-A-e652087aaeb36253763f414fdbcfbbeedd2cf086.png"
                         },
                         {
                           "name": "session-B",
                           "contentType": "image/png",
-                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-ad7c5--and-the-winner-is-recorded-chromium/attachments/session-B-3b7d055510afe8ae1421f29798e4d186f068d5b0.png"
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-ad7c5--and-the-winner-is-recorded-chromium/attachments/session-B-fbc1192ede9b211a88454a67337870c1c7405fda.png"
                         }
                       ]
                     }
@@ -245,23 +245,23 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2308,
+                      "duration": 1123,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-06T10:39:47.191Z",
+                      "startTime": "2026-11-06T10:53:28.526Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "session-A",
                           "contentType": "image/png",
-                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-bfe59-es-Record-no-longer-exists--chromium/attachments/session-A-04b9ea9cfd9c7ba349f1f3aff3de537a1e06625b.png"
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-bfe59-es-Record-no-longer-exists--chromium/attachments/session-A-0fae59f1cdad44df04c2ad995448b95639e465c7.png"
                         },
                         {
                           "name": "session-B",
                           "contentType": "image/png",
-                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-bfe59-es-Record-no-longer-exists--chromium/attachments/session-B-d3ff77b10ccac81e37a426cbf1b5eb15274a2429.png"
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-bfe59-es-Record-no-longer-exists--chromium/attachments/session-B-7650c0b78cfeb563ab41696821a0fac21442b805.png"
                         }
                       ]
                     }
@@ -290,23 +290,23 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2687,
+                      "duration": 1236,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-06T10:39:49.512Z",
+                      "startTime": "2026-11-06T10:53:29.658Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "session-A",
                           "contentType": "image/png",
-                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-5b1c6-tab-keeps-its-unsaved-edits-chromium/attachments/session-A-82e7bf552b04ab92d03c133bf3db309b069a0321.png"
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-5b1c6-tab-keeps-its-unsaved-edits-chromium/attachments/session-A-25cf8214cbf46f1ca0aeb26c25e1b266103dc500.png"
                         },
                         {
                           "name": "session-B",
                           "contentType": "image/png",
-                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-5b1c6-tab-keeps-its-unsaved-edits-chromium/attachments/session-B-389436f6169483b288bb94060d6a151469c31025.png"
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-5b1c6-tab-keeps-its-unsaved-edits-chromium/attachments/session-B-53952fb22114e433184d1bb80ff9b606fc56bc8b.png"
                         }
                       ]
                     }
@@ -335,23 +335,23 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2321,
+                      "duration": 1103,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-06T10:39:52.228Z",
+                      "startTime": "2026-11-06T10:53:30.903Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "session-A",
                           "contentType": "image/png",
-                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-13105-nd-a-rerun-creates-it-fresh-chromium/attachments/session-A-ab1bdbec67881ddd80e5b40783ebb16add01ce8f.png"
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-13105-nd-a-rerun-creates-it-fresh-chromium/attachments/session-A-c6042c116cdda9727e3b8d8f30a745a9b28198c6.png"
                         },
                         {
                           "name": "session-B",
                           "contentType": "image/png",
-                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-13105-nd-a-rerun-creates-it-fresh-chromium/attachments/session-B-4555c81483baebeda4a135ab208ee1ab66f4e8bf.png"
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-13105-nd-a-rerun-creates-it-fresh-chromium/attachments/session-B-8430b026287d11a72cb232cf819f23b8a4b3361b.png"
                         }
                       ]
                     }
@@ -371,8 +371,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-06T10:39:37.108Z",
-    "duration": 17561.347999999998,
+    "startTime": "2026-11-06T10:53:24.191Z",
+    "duration": 7941.068000000001,
     "expected": 6,
     "skipped": 0,
     "unexpected": 0,

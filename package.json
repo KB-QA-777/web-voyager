@@ -1,5 +1,5 @@
 {
-  "name": "shared-ticket-playwright-challenge",
+  "name": "web-voyager-shared-ticket-suite",
   "version": "1.0.0",
   "description": "Multi-session Playwright (JS) suite: two users on one ticket - sync, collision, stale data, popup, clean-up",
   "main": "index.js",
