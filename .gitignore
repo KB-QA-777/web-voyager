@@ -1,17 +1,13 @@
-# editors
+# editors / env
 .vscode/
-
-# environments
 .env
-.venv
-.venv/
 .env.*
 
-# cache
-__pycache__/
+# node
+node_modules/
 
-# tmp
-tmp/
-
-# jupyter
-.ipynb_checkpoints/
+# Per-run evidence folders are large (html report, traces). The summary logs
+# (stability-run-log.md, parallel-run-log.md) and evidence/sample-run/ are committed.
+evidence/run-*/
+evidence/stability-20*/
+evidence/parallel-20*/

@@ -1,0 +1,60 @@
+2026-11-06T10:53:24.988Z [run=sample] [test=sessions-two-isolated-contexts-logged-in-as-different-users-] [session=-] START Sessions: two isolated contexts, logged in as different users, both show the same record
+2026-11-06T10:53:25.002Z [run=sample] [test=sessions-two-isolated-contexts-logged-in-as-different-users-] [session=-] created TCK-101 version=1
+2026-11-06T10:53:25.425Z [run=sample] [test=sessions-two-isolated-contexts-logged-in-as-different-users-] [session=A] logged in as usera.test, on /tickets/TCK-101, live sync connected
+2026-11-06T10:53:25.850Z [run=sample] [test=sessions-two-isolated-contexts-logged-in-as-different-users-] [session=B] logged in as userb.test, on /tickets/TCK-101, live sync connected
+2026-11-06T10:53:25.888Z [run=sample] [test=sessions-two-isolated-contexts-logged-in-as-different-users-] [session=-] both sessions show TCK-101 with distinct session cookies
+2026-11-06T10:53:25.936Z [run=sample] [test=sessions-two-isolated-contexts-logged-in-as-different-users-] [session=A] screenshot evidence/sample/sessions-two-isolated-contexts-logged-in-as-different-users--session-A.png
+2026-11-06T10:53:26.053Z [run=sample] [test=sessions-two-isolated-contexts-logged-in-as-different-users-] [session=B] screenshot evidence/sample/sessions-two-isolated-contexts-logged-in-as-different-users--session-B.png
+2026-11-06T10:53:26.120Z [run=sample] [test=sessions-two-isolated-contexts-logged-in-as-different-users-] [session=-] cleaned up TCK-101 (delete=204, get=404)
+2026-11-06T10:53:26.120Z [run=sample] [test=sessions-two-isolated-contexts-logged-in-as-different-users-] [session=-] END Sessions: two isolated contexts, logged in as different users, both show the same record status=passed duration=930ms
+2026-11-06T10:53:26.139Z [run=sample] [test=sync-a-changes-status-to-in-review-b-shows-in-review-live-an] [session=-] START Sync: A changes status to "In Review"; B shows "In Review" live and after refresh
+2026-11-06T10:53:26.149Z [run=sample] [test=sync-a-changes-status-to-in-review-b-shows-in-review-live-an] [session=-] created TCK-101 version=1
+2026-11-06T10:53:26.510Z [run=sample] [test=sync-a-changes-status-to-in-review-b-shows-in-review-live-an] [session=A] logged in as usera.test, on /tickets/TCK-101, live sync connected
+2026-11-06T10:53:26.920Z [run=sample] [test=sync-a-changes-status-to-in-review-b-shows-in-review-live-an] [session=B] logged in as userb.test, on /tickets/TCK-101, live sync connected
+2026-11-06T10:53:26.988Z [run=sample] [test=sync-a-changes-status-to-in-review-b-shows-in-review-live-an] [session=A] saved status=In Review
+2026-11-06T10:53:27.007Z [run=sample] [test=sync-a-changes-status-to-in-review-b-shows-in-review-live-an] [session=B] status shows In Review (live, no refresh)
+2026-11-06T10:53:27.065Z [run=sample] [test=sync-a-changes-status-to-in-review-b-shows-in-review-live-an] [session=B] status shows In Review after refresh
+2026-11-06T10:53:27.109Z [run=sample] [test=sync-a-changes-status-to-in-review-b-shows-in-review-live-an] [session=A] screenshot evidence/sample/sync-a-changes-status-to-in-review-b-shows-in-review-live-an-session-A.png
+2026-11-06T10:53:27.213Z [run=sample] [test=sync-a-changes-status-to-in-review-b-shows-in-review-live-an] [session=B] screenshot evidence/sample/sync-a-changes-status-to-in-review-b-shows-in-review-live-an-session-B.png
+2026-11-06T10:53:27.265Z [run=sample] [test=sync-a-changes-status-to-in-review-b-shows-in-review-live-an] [session=-] cleaned up TCK-101 (delete=204, get=404)
+2026-11-06T10:53:27.265Z [run=sample] [test=sync-a-changes-status-to-in-review-b-shows-in-review-live-an] [session=-] END Sync: A changes status to "In Review"; B shows "In Review" live and after refresh status=passed duration=932ms
+2026-11-06T10:53:27.284Z [run=sample] [test=collision-a-and-b-save-the-same-field-within-the-same-second] [session=-] START Collision: A and B save the same field within the same second; both show one final value and the winner is recorded
+2026-11-06T10:53:27.290Z [run=sample] [test=collision-a-and-b-save-the-same-field-within-the-same-second] [session=-] created TCK-101 version=1
+2026-11-06T10:53:27.675Z [run=sample] [test=collision-a-and-b-save-the-same-field-within-the-same-second] [session=A] logged in as usera.test, on /tickets/TCK-101, live sync connected
+2026-11-06T10:53:28.078Z [run=sample] [test=collision-a-and-b-save-the-same-field-within-the-same-second] [session=B] logged in as userb.test, on /tickets/TCK-101, live sync connected
+2026-11-06T10:53:28.255Z [run=sample] [test=collision-a-and-b-save-the-same-field-within-the-same-second] [session=A] saved priority=High -> server version 2 at 1793962408168
+2026-11-06T10:53:28.255Z [run=sample] [test=collision-a-and-b-save-the-same-field-within-the-same-second] [session=B] saved priority=Low  -> server version 3 at 1793962408236
+2026-11-06T10:53:28.264Z [run=sample] [test=collision-a-and-b-save-the-same-field-within-the-same-second] [session=-] COLLISION RESULT: winner=B (userb.test) final priority=Low version=3 gap=68ms
+2026-11-06T10:53:28.355Z [run=sample] [test=collision-a-and-b-save-the-same-field-within-the-same-second] [session=A] screenshot evidence/sample/collision-a-and-b-save-the-same-field-within-the-same-second-session-A.png
+2026-11-06T10:53:28.467Z [run=sample] [test=collision-a-and-b-save-the-same-field-within-the-same-second] [session=B] screenshot evidence/sample/collision-a-and-b-save-the-same-field-within-the-same-second-session-B.png
+2026-11-06T10:53:28.519Z [run=sample] [test=collision-a-and-b-save-the-same-field-within-the-same-second] [session=-] cleaned up TCK-101 (delete=204, get=404)
+2026-11-06T10:53:28.519Z [run=sample] [test=collision-a-and-b-save-the-same-field-within-the-same-second] [session=-] END Collision: A and B save the same field within the same second; both show one final value and the winner is recorded status=passed duration=1035ms
+2026-11-06T10:53:28.538Z [run=sample] [test=stale-data-b-deletes-the-record-a-still-on-the-old-page-save] [session=-] START Stale data: B deletes the record; A, still on the old page, saves and sees "Record no longer exists"
+2026-11-06T10:53:28.545Z [run=sample] [test=stale-data-b-deletes-the-record-a-still-on-the-old-page-save] [session=-] created TCK-101 version=1
+2026-11-06T10:53:28.941Z [run=sample] [test=stale-data-b-deletes-the-record-a-still-on-the-old-page-save] [session=A] logged in as usera.test, on /tickets/TCK-101, live sync connected
+2026-11-06T10:53:29.321Z [run=sample] [test=stale-data-b-deletes-the-record-a-still-on-the-old-page-save] [session=B] logged in as userb.test, on /tickets/TCK-101, live sync connected
+2026-11-06T10:53:29.384Z [run=sample] [test=stale-data-b-deletes-the-record-a-still-on-the-old-page-save] [session=B] deleted TCK-101
+2026-11-06T10:53:29.459Z [run=sample] [test=stale-data-b-deletes-the-record-a-still-on-the-old-page-save] [session=A] save rejected with visible message "Record no longer exists"
+2026-11-06T10:53:29.498Z [run=sample] [test=stale-data-b-deletes-the-record-a-still-on-the-old-page-save] [session=A] screenshot evidence/sample/stale-data-b-deletes-the-record-a-still-on-the-old-page-save-session-A.png
+2026-11-06T10:53:29.596Z [run=sample] [test=stale-data-b-deletes-the-record-a-still-on-the-old-page-save] [session=B] screenshot evidence/sample/stale-data-b-deletes-the-record-a-still-on-the-old-page-save-session-B.png
+2026-11-06T10:53:29.649Z [run=sample] [test=stale-data-b-deletes-the-record-a-still-on-the-old-page-save] [session=-] cleaned up TCK-101 (delete=404, get=404)
+2026-11-06T10:53:29.649Z [run=sample] [test=stale-data-b-deletes-the-record-a-still-on-the-old-page-save] [session=-] END Stale data: B deletes the record; A, still on the old page, saves and sees "Record no longer exists" status=passed duration=928ms
+2026-11-06T10:53:29.668Z [run=sample] [test=popup-a-opens-print-preview-in-a-new-tab-it-shows-tck-101-th] [session=-] START Popup: A opens "Print preview" in a new tab; it shows TCK-101; the main tab keeps its unsaved edits
+2026-11-06T10:53:29.675Z [run=sample] [test=popup-a-opens-print-preview-in-a-new-tab-it-shows-tck-101-th] [session=-] created TCK-101 version=1
+2026-11-06T10:53:30.046Z [run=sample] [test=popup-a-opens-print-preview-in-a-new-tab-it-shows-tck-101-th] [session=A] logged in as usera.test, on /tickets/TCK-101, live sync connected
+2026-11-06T10:53:30.446Z [run=sample] [test=popup-a-opens-print-preview-in-a-new-tab-it-shows-tck-101-th] [session=B] logged in as userb.test, on /tickets/TCK-101, live sync connected
+2026-11-06T10:53:30.615Z [run=sample] [test=popup-a-opens-print-preview-in-a-new-tab-it-shows-tck-101-th] [session=A] popup opened at http://127.0.0.1:40993/tickets/TCK-101/print showing TCK-101
+2026-11-06T10:53:30.689Z [run=sample] [test=popup-a-opens-print-preview-in-a-new-tab-it-shows-tck-101-th] [session=A] popup closed; main tab unsaved edit intact
+2026-11-06T10:53:30.738Z [run=sample] [test=popup-a-opens-print-preview-in-a-new-tab-it-shows-tck-101-th] [session=A] screenshot evidence/sample/popup-a-opens-print-preview-in-a-new-tab-it-shows-tck-101-th-session-A.png
+2026-11-06T10:53:30.849Z [run=sample] [test=popup-a-opens-print-preview-in-a-new-tab-it-shows-tck-101-th] [session=B] screenshot evidence/sample/popup-a-opens-print-preview-in-a-new-tab-it-shows-tck-101-th-session-B.png
+2026-11-06T10:53:30.896Z [run=sample] [test=popup-a-opens-print-preview-in-a-new-tab-it-shows-tck-101-th] [session=-] cleaned up TCK-101 (delete=204, get=404)
+2026-11-06T10:53:30.897Z [run=sample] [test=popup-a-opens-print-preview-in-a-new-tab-it-shows-tck-101-th] [session=-] END Popup: A opens "Print preview" in a new tab; it shows TCK-101; the main tab keeps its unsaved edits status=passed duration=1026ms
+2026-11-06T10:53:30.915Z [run=sample] [test=clean-up-test-data-is-removed-at-the-end-of-the-run-and-a-re] [session=-] START Clean up: test data is removed at the end of the run and a rerun creates it fresh
+2026-11-06T10:53:30.921Z [run=sample] [test=clean-up-test-data-is-removed-at-the-end-of-the-run-and-a-re] [session=-] created TCK-101 version=1
+2026-11-06T10:53:31.296Z [run=sample] [test=clean-up-test-data-is-removed-at-the-end-of-the-run-and-a-re] [session=A] logged in as usera.test, on /tickets/TCK-101, live sync connected
+2026-11-06T10:53:31.703Z [run=sample] [test=clean-up-test-data-is-removed-at-the-end-of-the-run-and-a-re] [session=B] logged in as userb.test, on /tickets/TCK-101, live sync connected
+2026-11-06T10:53:31.787Z [run=sample] [test=clean-up-test-data-is-removed-at-the-end-of-the-run-and-a-re] [session=-] rerun created TCK-101 fresh in the identical initial state; fixture teardown deletes it again
+2026-11-06T10:53:31.834Z [run=sample] [test=clean-up-test-data-is-removed-at-the-end-of-the-run-and-a-re] [session=A] screenshot evidence/sample/clean-up-test-data-is-removed-at-the-end-of-the-run-and-a-re-session-A.png
+2026-11-06T10:53:31.948Z [run=sample] [test=clean-up-test-data-is-removed-at-the-end-of-the-run-and-a-re] [session=B] screenshot evidence/sample/clean-up-test-data-is-removed-at-the-end-of-the-run-and-a-re-session-B.png
+2026-11-06T10:53:32.010Z [run=sample] [test=clean-up-test-data-is-removed-at-the-end-of-the-run-and-a-re] [session=-] cleaned up TCK-101 (delete=204, get=404)
+2026-11-06T10:53:32.011Z [run=sample] [test=clean-up-test-data-is-removed-at-the-end-of-the-run-and-a-re] [session=-] END Clean up: test data is removed at the end of the run and a rerun creates it fresh status=passed duration=877ms

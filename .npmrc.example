@@ -1,0 +1,4 @@
+# Ground rule: packages come from the internal Artifactory mirror only.
+# Copy to .npmrc and fill in the host before `npm ci`.
+registry=https://<artifactory-host>/artifactory/api/npm/npm-remote/
+always-auth=true

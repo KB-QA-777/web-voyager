@@ -1,0 +1,381 @@
+{
+  "config": {
+    "argv": [
+      "/opt/node22/bin/node",
+      "/home/user/web-voyager/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/home/user/web-voyager/playwright.config.js",
+    "rootDir": "/home/user/web-voyager/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/user/web-voyager/evidence/sample/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/user/web-voyager/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/user/web-voyager/evidence/sample/results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "/home/user/web-voyager/evidence/sample/html-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node app/server.js",
+      "url": "http://127.0.0.1:40993/health",
+      "env": {
+        "APP_PORT": "40993"
+      },
+      "reuseExistingServer": false,
+      "stdout": "pipe",
+      "stderr": "pipe",
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "shared-ticket.spec.js",
+      "file": "shared-ticket.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Shared ticket TCK-101 across two sessions",
+          "file": "shared-ticket.spec.js",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Sessions: two isolated contexts, logged in as different users, both show the same record",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1164,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-06T10:53:24.773Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "session-A",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-2c00a-s-both-show-the-same-record-chromium/attachments/session-A-3f7cdfb757c7b42df9b1acdbe8c7118801b89cda.png"
+                        },
+                        {
+                          "name": "session-B",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-2c00a-s-both-show-the-same-record-chromium/attachments/session-B-1b8fbfc3c5ce2027a471370ffeb0306a0ed30054.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b642a46482640dc07124-6e27cf8a34065429f243",
+              "file": "shared-ticket.spec.js",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "Sync: A changes status to \"In Review\"; B shows \"In Review\" live and after refresh",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1134,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-06T10:53:26.127Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "session-A",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-72657-view-live-and-after-refresh-chromium/attachments/session-A-afe56f99ade6d3f7c2b5560356f635086e29f991.png"
+                        },
+                        {
+                          "name": "session-B",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-72657-view-live-and-after-refresh-chromium/attachments/session-B-bc53642bba1735a5b665fe4b7f14bac981274134.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b642a46482640dc07124-55791d21015897d2af39",
+              "file": "shared-ticket.spec.js",
+              "line": 21,
+              "column": 3
+            },
+            {
+              "title": "Collision: A and B save the same field within the same second; both show one final value and the winner is recorded",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1244,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-06T10:53:27.273Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "session-A",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-ad7c5--and-the-winner-is-recorded-chromium/attachments/session-A-e652087aaeb36253763f414fdbcfbbeedd2cf086.png"
+                        },
+                        {
+                          "name": "session-B",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-ad7c5--and-the-winner-is-recorded-chromium/attachments/session-B-fbc1192ede9b211a88454a67337870c1c7405fda.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b642a46482640dc07124-dcd36fad81f43503c364",
+              "file": "shared-ticket.spec.js",
+              "line": 43,
+              "column": 3
+            },
+            {
+              "title": "Stale data: B deletes the record; A, still on the old page, saves and sees \"Record no longer exists\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1123,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-06T10:53:28.526Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "session-A",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-bfe59-es-Record-no-longer-exists--chromium/attachments/session-A-0fae59f1cdad44df04c2ad995448b95639e465c7.png"
+                        },
+                        {
+                          "name": "session-B",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-bfe59-es-Record-no-longer-exists--chromium/attachments/session-B-7650c0b78cfeb563ab41696821a0fac21442b805.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b642a46482640dc07124-6c16a283c1e1641b3318",
+              "file": "shared-ticket.spec.js",
+              "line": 74,
+              "column": 3
+            },
+            {
+              "title": "Popup: A opens \"Print preview\" in a new tab; it shows TCK-101; the main tab keeps its unsaved edits",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1236,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-06T10:53:29.658Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "session-A",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-5b1c6-tab-keeps-its-unsaved-edits-chromium/attachments/session-A-25cf8214cbf46f1ca0aeb26c25e1b266103dc500.png"
+                        },
+                        {
+                          "name": "session-B",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-5b1c6-tab-keeps-its-unsaved-edits-chromium/attachments/session-B-53952fb22114e433184d1bb80ff9b606fc56bc8b.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b642a46482640dc07124-02f170a28bd335ae5558",
+              "file": "shared-ticket.spec.js",
+              "line": 98,
+              "column": 3
+            },
+            {
+              "title": "Clean up: test data is removed at the end of the run and a rerun creates it fresh",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1103,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-06T10:53:30.903Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "session-A",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-13105-nd-a-rerun-creates-it-fresh-chromium/attachments/session-A-c6042c116cdda9727e3b8d8f30a745a9b28198c6.png"
+                        },
+                        {
+                          "name": "session-B",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/evidence/sample/test-results/shared-ticket-Shared-ticke-13105-nd-a-rerun-creates-it-fresh-chromium/attachments/session-B-8430b026287d11a72cb232cf819f23b8a4b3361b.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b642a46482640dc07124-7d9524b6a4b410de5602",
+              "file": "shared-ticket.spec.js",
+              "line": 125,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-06T10:53:24.191Z",
+    "duration": 7941.068000000001,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
