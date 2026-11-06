@@ -15,3 +15,20 @@
 | 10 | stability-2026-11-06T1038-10 | GREEN | 8.4s | 6 passed |
 
 **10/10 consecutive green.**
+
+## Stability batch 2026-11-06T10:55:37.476Z (10 consecutive headless runs)
+
+| # | RUN_ID | Result | Duration | Tests |
+|---|---|---|---|---|
+| 1 | stability-2026-11-06T1055-01 | GREEN | 8.8s | 6 passed |
+| 2 | stability-2026-11-06T1055-02 | GREEN | 8.7s | 6 passed |
+| 3 | stability-2026-11-06T1055-03 | GREEN | 8.7s | 6 passed |
+| 4 | stability-2026-11-06T1055-04 | GREEN | 9.0s | 6 passed |
+| 5 | stability-2026-11-06T1055-05 | GREEN | 8.7s | 6 passed |
+| 6 | stability-2026-11-06T1055-06 | GREEN | 8.9s | 6 passed |
+| 7 | stability-2026-11-06T1055-07 | GREEN | 8.8s | 6 passed |
+| 8 | stability-2026-11-06T1055-08 | GREEN | 8.5s | 6 passed |
+| 9 | stability-2026-11-06T1055-09 | GREEN | 8.8s | 6 passed |
+| 10 | stability-2026-11-06T1055-10 | GREEN | 8.5s | 6 passed |
+
+**10/10 consecutive green.**
