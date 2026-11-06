@@ -1,0 +1,22 @@
+{
+  "name": "shared-ticket-playwright-challenge",
+  "version": "1.0.0",
+  "description": "Multi-session Playwright (JS) suite: two users on one ticket - sync, collision, stale data, popup, clean-up",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "check:no-waits": "node scripts/check-no-waits.js",
+    "stability": "node scripts/stability.js 10",
+    "parallel": "node scripts/parallel.js 3",
+    "app:dev": "APP_PORT=3000 node app/server.js",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  },
+  "private": true
+}

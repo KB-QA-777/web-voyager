@@ -1,0 +1,381 @@
+{
+  "config": {
+    "argv": [
+      "/opt/node22/bin/node",
+      "/home/user/web-voyager/playwright-challenge/node_modules/@playwright/test/cli.js",
+      "test"
+    ],
+    "configFile": "/home/user/web-voyager/playwright-challenge/playwright.config.js",
+    "rootDir": "/home/user/web-voyager/playwright-challenge/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/user/web-voyager/playwright-challenge/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/html-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node app/server.js",
+      "url": "http://127.0.0.1:42461/health",
+      "env": {
+        "APP_PORT": "42461"
+      },
+      "reuseExistingServer": false,
+      "stdout": "pipe",
+      "stderr": "pipe",
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "shared-ticket.spec.js",
+      "file": "shared-ticket.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Shared ticket TCK-101 across two sessions",
+          "file": "shared-ticket.spec.js",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Sessions: two isolated contexts, logged in as different users, both show the same record",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3431,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-06T10:39:37.680Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "session-A",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-2c00a-s-both-show-the-same-record-chromium/attachments/session-A-d895276af6257428915c77e0ece7e8edef22069f.png"
+                        },
+                        {
+                          "name": "session-B",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-2c00a-s-both-show-the-same-record-chromium/attachments/session-B-733ad7c13cce0c7e7ae8ffb95f15ff0a8133fbb4.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b642a46482640dc07124-6e27cf8a34065429f243",
+              "file": "shared-ticket.spec.js",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "Sync: A changes status to \"In Review\"; B shows \"In Review\" live and after refresh",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2521,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-06T10:39:41.741Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "session-A",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-72657-view-live-and-after-refresh-chromium/attachments/session-A-f37c73f0cc5694ef6138b00bb6c622d83678e5ea.png"
+                        },
+                        {
+                          "name": "session-B",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-72657-view-live-and-after-refresh-chromium/attachments/session-B-f6d39f1fe47e675c2a33f993102b10a26280ebd2.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b642a46482640dc07124-55791d21015897d2af39",
+              "file": "shared-ticket.spec.js",
+              "line": 21,
+              "column": 3
+            },
+            {
+              "title": "Collision: A and B save the same field within the same second; both show one final value and the winner is recorded",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2912,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-06T10:39:44.270Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "session-A",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-ad7c5--and-the-winner-is-recorded-chromium/attachments/session-A-1aa45f8229821860c4b5110e7113fb60ae023df6.png"
+                        },
+                        {
+                          "name": "session-B",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-ad7c5--and-the-winner-is-recorded-chromium/attachments/session-B-3b7d055510afe8ae1421f29798e4d186f068d5b0.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b642a46482640dc07124-dcd36fad81f43503c364",
+              "file": "shared-ticket.spec.js",
+              "line": 43,
+              "column": 3
+            },
+            {
+              "title": "Stale data: B deletes the record; A, still on the old page, saves and sees \"Record no longer exists\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2308,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-06T10:39:47.191Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "session-A",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-bfe59-es-Record-no-longer-exists--chromium/attachments/session-A-04b9ea9cfd9c7ba349f1f3aff3de537a1e06625b.png"
+                        },
+                        {
+                          "name": "session-B",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-bfe59-es-Record-no-longer-exists--chromium/attachments/session-B-d3ff77b10ccac81e37a426cbf1b5eb15274a2429.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b642a46482640dc07124-6c16a283c1e1641b3318",
+              "file": "shared-ticket.spec.js",
+              "line": 74,
+              "column": 3
+            },
+            {
+              "title": "Popup: A opens \"Print preview\" in a new tab; it shows TCK-101; the main tab keeps its unsaved edits",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2687,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-06T10:39:49.512Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "session-A",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-5b1c6-tab-keeps-its-unsaved-edits-chromium/attachments/session-A-82e7bf552b04ab92d03c133bf3db309b069a0321.png"
+                        },
+                        {
+                          "name": "session-B",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-5b1c6-tab-keeps-its-unsaved-edits-chromium/attachments/session-B-389436f6169483b288bb94060d6a151469c31025.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b642a46482640dc07124-02f170a28bd335ae5558",
+              "file": "shared-ticket.spec.js",
+              "line": 98,
+              "column": 3
+            },
+            {
+              "title": "Clean up: test data is removed at the end of the run and a rerun creates it fresh",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2321,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-06T10:39:52.228Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "session-A",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-13105-nd-a-rerun-creates-it-fresh-chromium/attachments/session-A-ab1bdbec67881ddd80e5b40783ebb16add01ce8f.png"
+                        },
+                        {
+                          "name": "session-B",
+                          "contentType": "image/png",
+                          "path": "/home/user/web-voyager/playwright-challenge/evidence/parallel-2026-11-06T1039-A/test-results/shared-ticket-Shared-ticke-13105-nd-a-rerun-creates-it-fresh-chromium/attachments/session-B-4555c81483baebeda4a135ab208ee1ab66f4e8bf.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b642a46482640dc07124-7d9524b6a4b410de5602",
+              "file": "shared-ticket.spec.js",
+              "line": 125,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-06T10:39:37.108Z",
+    "duration": 17561.347999999998,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
