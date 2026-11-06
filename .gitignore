@@ -3,15 +3,7 @@
 
 # environments
 .env
-.venv
-.venv/
 .env.*
 
-# cache
-__pycache__/
-
-# tmp
-tmp/
-
-# jupyter
-.ipynb_checkpoints/
+# node
+node_modules/
